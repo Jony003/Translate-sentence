@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class FindWord {
-    String answer;
+    String answer="";
     public FindWord(ArrayList<Translation> translations, String input){
         String[] splited = input.split("\\s+");
         for(int i=0;i<splited.length;i++){
