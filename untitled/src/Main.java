@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
+        System.out.println();
         boolean wanna;
         do{
             System.out.println("Impute the phrase you want to translate: ");

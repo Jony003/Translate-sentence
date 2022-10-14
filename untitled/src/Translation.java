@@ -10,7 +10,9 @@ public class Translation {
     String PingYing;
     int Position;
     public Translation (String PartOfSpeach,String Chinese,String PingYing,String English,int Position) throws FileNotFoundException {
-        this.English=English;
+        if(English.startsWith("to ")){
+            this.English=English.substring(3);
+        }else this.English=English;
         this.Chinese=Chinese;
         this.Position=Position;
         this.PingYing=PingYing;
